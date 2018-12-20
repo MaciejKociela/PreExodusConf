@@ -4,12 +4,13 @@
 	<title>Confront | 21-24.02.2019 | Exodus Conf</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="shortcut icon" href="assets/16.png?v=32">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<style type="text/css">
 		body {
 			margin:0;
 			overflow-x: hidden;
 			overflow-y: hidden;
-		}
+		}        
 
 		.hero {
 			height: 100vh;
@@ -24,20 +25,53 @@
   			top: 50%;
   			left: 50%;
  			transform: translate(-50%,-50%);
+			width: 100%;
+			text-align: center;
+		}
+
+		a {
+        	font-family: 'Lato';
+        	text-transform: uppercase;
+        	text-decoration: none;
+        	font-weight: 900;
+		    letter-spacing: 0.2em;
+		    padding: 14px 26px;
+		    transition: .2s;
+		    color: #1c1c1c;
+        	background-color: #fff;
+        	border:none;
+        	outline: none;
+        }
+
+		.center__logo img {
 			max-width: 100%;
 		}
 
 		@media(max-width: 800px) {
 			.center__logo {
-				min-width: 700px;
+				width: 700px;
 			}
 		}
+		@media(max-width: 320px) {
+			.center__logo {
+				width: 400px;
+			}
+		}
+
+		/* EFEKT PO NAJECHANIU NA PRZYCISK - USUNĄĆ JEŻELI SIĘ NIE PODOBA */
+
+		a:hover {
+        	letter-spacing: 1em;
+        }
 
 	</style>
 </head>
 <body>
-		<section class="hero">
-			<img class="center__logo" src="assets/logo.png">
-		</section>
+	<section class="hero">
+		<div class="center__logo">
+			<img src="assets/logo.png">
+			<a href="#">Zarejestruj się</a>				
+		</div>
+	</section>
 </body>
 </html>
